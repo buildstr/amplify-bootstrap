@@ -1,1 +1,5 @@
+.gitignore
+.prettierignore
+node_modules
+dist
 /**/*.png

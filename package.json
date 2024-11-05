@@ -10,7 +10,7 @@
   },
   "scripts": {
     "lint": "eslint ./src",
-    "format": "prettier --check 'src/**/*'",
+    "format": "prettier --check '**/*'",
     "format:fix": "prettier --write 'src/**/*'",
     "build": "tsc && chmod +x dist/bin/init.js && chmod +x dist/bin/bootstrap.js && chmod +x dist/bin/generate.js && cp -r src/templates/application/public dist/templates/application",
     "app:bootstrap": "node ./scripts/bootstrap.js"
