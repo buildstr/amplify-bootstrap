@@ -27,3 +27,18 @@ it is using amplify Gen 2 which will include an amplify directory where you can 
 ### Usage
 
 At this point you will be able to go to the amplify console to see your application, find the deployment, and manage users and other settings.
+you can go to the deployment section in amplify to see the status of the deployment and the url of the application. when you push a commit to a branch defined in your configuration file, it will trigger a new deployment.
+
+#### Local Development
+
+there are two ways to do local development depending on what your trying to do.
+
+1. If you are working on the application side, you will need an existing backend infrastructure to work with. for this you can:
+
+    1. go to the amplify console and navigate to the branch you want to work from
+    2. in the deployments section click to download the build artifacts
+    3. in the downloaded zip file look for an `amplify_outputs.json` file
+    4. put this file in the root of your application directory
+    5. now you can just run `npm run dev` in the application directory to start the next.js development server. This will allow you to see changes in real time as you make them.
+
+2. If you are working on the backend infrastructure you can follow the [ampx sandbox]('https://docs.amplify.aws/react/reference/cli-commands/') documentation on how to work with the amplify cli to create and manage your development infrastructure.
