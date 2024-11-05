@@ -23,4 +23,9 @@ it is using amplify Gen 2 which will include an amplify directory where you can 
 - `abstrp-generate` - this will generate stuff, it will initialize a next.js app in the application directory with amplify and various custom files to get you started
 - `abstrp-bootstrap` - this will bootstrap the amplify project, pushing your local changes to your github repository and connecting the branch for deployment in AWS Amplify
 
+### Configuration
+
+
+### Usage
 At this point you will be able to go to the amplify console to see your application, find the deployment, and manage users and other settings.
+

@@ -1,4 +1,4 @@
-import { Config } from "../../../../../types";
+import { Config } from '../../../../../types';
 
 export const footer = (props: Config) => {
     return `export default function Footer() {

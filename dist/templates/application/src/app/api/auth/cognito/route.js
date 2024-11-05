@@ -21,7 +21,7 @@ import awsConfig from "../../../../../amplify_outputs.json";
 const cognitoClientId = awsConfig?.custom?.userPoolClientId || process.env.COGNITO_CLIENT_ID || "";
 const cognitoClientSecret = awsConfig?.custom?.token || process.env.COGNITO_CLIENT_SECRET || "";
 const cognitoUserPoolId = awsConfig?.auth?.user_pool_id || process.env.COGNITO_USER_POOL_ID || "";
-const cognitoRegion = awsConfig?.auth?.aws_region || '${props.awsRegion ? props.awsRegion : "us-east-1"}';
+const cognitoRegion = awsConfig?.auth?.aws_region || '${props.awsRegion ? props.awsRegion : 'us-east-1'}';
 
 const cognito = new CognitoIdentityProviderClient({
     region: cognitoRegion,

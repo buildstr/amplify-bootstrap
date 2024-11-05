@@ -1,6 +1,6 @@
-import * as t from "io-ts";
-import { PathReporter } from "io-ts/lib/PathReporter.js";
-import { isRight } from "fp-ts/lib/Either.js";
+import * as t from 'io-ts';
+import { PathReporter } from 'io-ts/lib/PathReporter.js';
+import { isRight } from 'fp-ts/lib/Either.js';
 export const ConfigSchema = t.type({
     awsProfile: t.string,
     appName: t.string,
@@ -19,7 +19,7 @@ export const ConfigSchema = t.type({
     autoBranchCreation: t.type({
         patterns: t.array(t.string),
         enableAutoBuild: t.boolean,
-    })
+    }),
 });
 export const validateConfig = (config) => {
     const result = ConfigSchema.decode(config);
@@ -27,7 +27,30 @@ export const validateConfig = (config) => {
         return result.right;
     }
     else {
-        const missingConfigs = PathReporter.report(result).map((o) => o.split("/")[1]);
+        const missingConfigs = PathReporter.report(result).map((o) => o.split('/')[1]);
         throw new Error(`Invalid configuration file check:\n${JSON.stringify(missingConfigs, null, 2)}`);
     }
 };
+// interface AmplifyApp {
+//     appId: string;
+//     appArn: string;
+//     name: string;
+//     tags: Record<string, string>;
+//     description: string;
+//     repository: string;
+//     platform: string;
+//     createTime: string;
+//     updateTime: string;
+//     iamServiceRoleArn: string;
+//     defaultDomain: string;
+//     enableBranchAutoBuild: boolean;
+//     enableBranchAutoDeletion: boolean;
+//     enableBasicAuth: boolean;
+//     customRules: any[];
+//     customHeaders: string;
+//     enableAutoBranchCreation: boolean;
+//     repositoryCloneMethod: string;
+// }
+// export interface AmplifyAppsResponse {
+//     apps: AmplifyApp[];
+// }

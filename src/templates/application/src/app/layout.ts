@@ -1,4 +1,4 @@
-import { Config } from "../../../../types";
+import { Config } from '../../../../types';
 
 export const layout = (props: Config) => {
     return `import { Providers } from "./providers";

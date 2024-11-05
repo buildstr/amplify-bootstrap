@@ -17,8 +17,4 @@ autoBranchCreation:
   enableAutoBuild: true`;
 };
 
-
-
-
 // githubRepo: dsover/test-amplify-2
-

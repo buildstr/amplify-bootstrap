@@ -1,5 +1,5 @@
-import { Config } from "../../../../types";
-
+import { Config } from '../../../../types';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const providers = (props: Config) => {
     return `"use client";
 
@@ -16,6 +16,6 @@ export function Providers({ children }: { children: React.ReactNode }) {
             <NextUIProvider navigate={router.push}>{children}</NextUIProvider>
         </SessionProvider>
     );
-}`
-}
+}`;
+};
 export default providers;

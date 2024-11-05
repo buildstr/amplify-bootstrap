@@ -1,4 +1,5 @@
-import { Config } from "../../types";
+import { Config } from '../../types';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const eslintrcJson = (props: Config) => {
     return `{
   "extends": ["next/core-web-vitals", "next/typescript"],

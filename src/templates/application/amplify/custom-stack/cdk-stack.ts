@@ -1,4 +1,5 @@
-import { Config } from "../../../../types";
+import { Config } from '../../../../types';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const cdkStack = (props: Config) => {
     return `import * as cdk from "aws-cdk-lib";
 import { Construct } from "constructs";

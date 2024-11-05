@@ -1,5 +1,5 @@
-import { Config } from "../../types";
-
+import { Config } from '../../types';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const tailwindConfig = (props: Config) => {
     return `import type { Config } from "tailwindcss";
 const {nextui} = require("@nextui-org/react");
@@ -21,7 +21,6 @@ const config: Config = {
   darkMode: "class",
   plugins: [nextui()],
 };
-export default config;`
-}
+export default config;`;
+};
 export default tailwindConfig;
-

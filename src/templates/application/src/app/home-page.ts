@@ -1,5 +1,5 @@
-import { Config } from "../../../../types";
-
+import { Config } from '../../../../types';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const homePage = (props: Config) => {
     return `import UserCard from "@/app/components/user-card";
 import FetchCard from "@/app/components/fetch-card";

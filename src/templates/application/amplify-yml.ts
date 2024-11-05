@@ -1,4 +1,5 @@
-import { Config } from "../../types";
+import { Config } from '../../types';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const amplifyYml = (props: Config) => {
     return `version: 1
 backend:
@@ -25,4 +26,3 @@ frontend:
       - node_modules/**/*`;
 };
 export default amplifyYml;
-

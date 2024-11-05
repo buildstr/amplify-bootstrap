@@ -1,5 +1,5 @@
-import { Config } from "../../../../../types";
-
+import { Config } from '../../../../../types';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const fetchCard = (props: Config) => {
     return `"use client";
 import { Divider, Skeleton } from "@nextui-org/react";

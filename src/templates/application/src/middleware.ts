@@ -1,5 +1,5 @@
-import { Config } from "../../../types";
-
+import { Config } from '../../../types';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const middleware = (props: Config) => {
     return `import { NextRequest, NextResponse } from "next/server";
 import { withAuth } from "next-auth/middleware";
